@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+<style>
+    .form-container {
+      width: 300px;
+      margin: 60px auto;
+      text-align: justify;
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container input[type="date"] {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 4px;
+    }
+
+    .form-container input[type="submit"],
+    .form-container input[type="reset"] {
+      margin-top: 10px;
+    }
+
+    .cancel-link {
+      display: block;
+      width: 300px;
+      margin: 20px auto 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .cancel-link a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    .cancel-link a:hover {
+      text-decoration: underline;
+    }
+       a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #333;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    	a:hover {
+      color: #007BFF;
+    }
+  </style>
+</head>
+	<body>
+		<form method ="POST" action="direcionaCad.jsp">
+			<div class="form-container">
+			  Nome: <input type="text" name="nome"><br>
+			  email: <input type="text" name="email"><br>
+			  Endereço: <input type="text" name="endereco"><br>
+			  Data: <input type="date" name=dataCadastro><br>
+			  Crédito: <input type="number" step="0.01" name="limiteCredito"><br>
+			  <input type="submit" value="OK">
+			  <input type="reset" value="Limpar">
+			</div>
+		</form> 
+	</body>
+    <a href="clientes.jsp">Tabela de Clientes</a>
+</html>
